@@ -1,0 +1,66 @@
+.calculator {
+    width: 300px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+    background-color: #ddd;
+    text-align: right;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+input {
+    width: 100%;
+    border: none;
+    font-size: 24px;
+    background-color: #ddd;
+    outline: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+button {
+    font-size: 20px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Change numbers to grey */
+button:not(.clear-button):not(.operator-button):not(.equal-button) {
+    color: grey;
+}
+
+/* Change the C button to red */
+.clear-button, .clear-button:hover {
+    background-color: red;
+    color: white;
+}
+
+.operator-button {
+    background-color: #f2c94c;
+    color: white;
+}
+
+.equal-button {
+    background-color: #4caf50;
+    color: white;
+}
+
